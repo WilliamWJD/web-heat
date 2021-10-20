@@ -1,6 +1,13 @@
+import styled from './App.module.scss';
+import { LoginBox } from './components/LoginBox';
+import { MessageList } from './components/MessageList';
+
 function App() {
   return (
-    <h1>Hello React in Vite</h1>
+    <main className={styled.contentWrapper}>
+      <MessageList/>
+      <LoginBox/>
+    </main>
   )
 }
 
